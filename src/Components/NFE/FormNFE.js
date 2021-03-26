@@ -1,15 +1,11 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import 'materialize-css';
-import TableNFE from './TableNFE';
-import ExportExcel from '../ExportExcel';
 import Header from '../Header';
 import Table from 'react-bootstrap/Table'
-import SaveIcon from '@material-ui/icons/Save';
-import Button from '@material-ui/core/Button';
 
 
-const username = localStorage.getItem( "username");
+//const username = localStorage.getItem( "username");
 const cnpj = localStorage.getItem("cnpj");
 
 
@@ -22,7 +18,7 @@ const  [notas,SetNotas] = useState([]);
 
 
 
-const token = 'jfhsdjklfhjsdl' //localStorage.getItem('token');
+//const token = 'jfhsdjklfhjsdl' //localStorage.getItem('token');
 const username = localStorage.getItem('usuario');
 
 

@@ -1,22 +1,16 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import Header from '../Header';
 import axios from 'axios';
 import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
-import Modal from 'react-modal';
-import { Redirect } from 'react-router-dom'
 import { useHistory } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
-import TextField from '@material-ui/core/TextField';
-import AttachFileIcon from '@material-ui/icons/AttachFile';
 
 export default function UserList() {
   const { useState } = React;
   const history = useHistory();
 
-  
 
-  const [columns, setColumns] = useState([
+/*   const [columns, setColumns] = useState([
     { title: 'id', field: 'id' },
     { title: 'arquivo', field: 'arquivo'},
     { title: 'cnpj', field: 'cnpj' },
@@ -29,9 +23,9 @@ export default function UserList() {
     { title: 'empresa', field: 'empresa' }
     
   ]);
-
+ */
   const [users,SetUsers] = useState("");
-  const [arquivo,SetArquivo] = useState(undefined);
+//  const [arquivo,SetArquivo] = useState(undefined);
 
 
   function EditUser(e) {

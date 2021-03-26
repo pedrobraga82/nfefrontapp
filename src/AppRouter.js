@@ -28,8 +28,8 @@ const AppRouter = () => {
                         <Route path="/cadusers" exact component={User} />
                         <Route path="/nfelist" exact component={NFEList} />
                         <Route path="/menuuser" exact component={MenuUser} />
-                        <Route exact path="/menuadmin" exact component={MenuAdmin} />  
-                        <Route exact path="/nfelistadmin" exact component={NFEListAdmin} />
+                        <Route  path="/menuadmin" exact component={MenuAdmin} />  
+                        <Route  path="/nfelistadmin" exact component={NFEListAdmin} />
                         <Route path="/listusers" exact component={UserList} />
                                 
                                 

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import FormGroup from '@material-ui/core/FormGroup';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -7,7 +6,6 @@ import Container from '@material-ui/core/Container';
 import Header from '../Header';
 import axios from 'axios';
 import { FormControl } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
 import { useHistory } from "react-router-dom";
 
 
@@ -68,7 +66,6 @@ export default function User() {
 
          let user = {
             empresa,
-            password,
             role,
             cnpj,
             password,

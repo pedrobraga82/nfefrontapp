@@ -1,4 +1,4 @@
-import React,{useEffect,useState, Fragment} from 'react';
+import React,{useEffect,useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Header from '../Header';
@@ -38,10 +38,10 @@ export default function NFEListAdmin() {
     const [cnpj,SetCnpj] = useState("")
     const [username,SetUsername] = useState("")
     const [users,SetUsers] = useState("")
-    const [nfe,SetNfe] = [{}]
-    const params = useParams();
+//    const [nfe,SetNfe] = [{}]
+ //   const params = useParams();
 
-    const [selectedDate, handleDateChange] = useState(new Date());
+//    const [selectedDate, handleDateChange] = useState(new Date());
 
 
 

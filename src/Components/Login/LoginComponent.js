@@ -56,8 +56,6 @@
  
  
    doLogin() {  	
-     //this.props.dispatch(
-     //    let url =  'https://localhost:8443/api/authentication?username=' + this.state.username +  '&password=' + base64.encode(utf8.encode(this.state.password))    
        
      let url =  '/api/authentication?username=' + this.state.username +  '&password=' + base64.encode(utf8.encode(this.state.password))    
        

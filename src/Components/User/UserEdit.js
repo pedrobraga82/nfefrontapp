@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import FormGroup from '@material-ui/core/FormGroup';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Header from '../Header';
 import { useParams } from 'react-router-dom';
-import queryString from 'query-string';
 import axios from 'axios';
 import { useHistory } from "react-router-dom";
 
@@ -28,8 +26,8 @@ export default function UserEdit(user) {
     const [role,SetRole] = useState("USER");
     const [senhacert,SetSenhaCert] = useState("");
     const [username,SetUsername] = useState("");
-    const [usuario,SetUsuario] = useState(null);
-    let formData = new FormData();
+//    const [usuario,SetUsuario] = useState(null);
+//    let formData = new FormData();
 
     useEffect(() => {
         
@@ -105,7 +103,6 @@ export default function UserEdit(user) {
 
          let user = {
             empresa,
-            password,
             role,
             cnpj,
             password,
