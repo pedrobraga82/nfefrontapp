@@ -60,7 +60,10 @@
       "last 1 safari version"
     ]
   },
-  "disableHostCheck": true,
+  "devServer": {
+    "compress": true,
+    "disableHostCheck": true
 
+ }      ,
   "proxy": "https://nfeview.herokuapp.com"
 }
