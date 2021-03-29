@@ -114,7 +114,7 @@ const handleSubmit = (event) => {
   event.preventDefault();
 
 
-           axios.get(`/nfe/${cnpj}`)
+           axios.get(`https://nfeview.herokuapp.com/nfe/${cnpj}`)
         .then(function (response) {
             SetTexto(response.data);
 
@@ -138,7 +138,7 @@ const handleSubmit = (event) => {
 
 
 
-      let url =  '/cadnfe' 
+      let url =  'https://nfeview.herokuapp.com/cadnfe' 
       let chave = e.target.id;
       let nf = dados.filter(nfe =>  nfe.chnfe == chave )
         

@@ -74,7 +74,7 @@ export default function User() {
             username:username,
         }
 
-        let url =  '/api/caduser' 
+        let url =  'https://nfeview.herokuapp.com/api/caduser' 
 
         axios.post(url, user)
         

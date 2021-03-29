@@ -5,7 +5,7 @@ import utf8 from "utf8";
 
 export function isAuthenticated() {   
   return function(dispatch) {                
-     let url =  'http://localhost:8082/api/user'
+     let url =  'https://nfeview.herokuapp.com/api/user'
      var config = {
       headers: {'Authorization':  'Bearer ' + localStorage.getItem( "token" )}
     };
@@ -23,7 +23,7 @@ export function isAuthenticated() {
 export function doLogin(username, password) {
   if(username && password) {
     return function(dispatch) {            
-     let url =  'http://localhost:8082/api/authentication?username=' + username +  '&password=' + base64.encode(utf8.encode(password))    
+     let url =  'https://nfeview.herokuapp.com?username=' + username +  '&password=' + base64.encode(utf8.encode(password))    
      axios.post(url)
         .then((response) => {    
           localStorage.removeItem( "token" )       

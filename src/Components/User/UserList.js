@@ -36,7 +36,7 @@ export default function UserList() {
         return e.cnpj === cnpj
       });
 
-      history.push(`/edituser/${JSON.stringify(user[0].id)}`) 
+      history.push(`https://nfeview.herokuapp.com/edituser/${JSON.stringify(user[0].id)}`) 
 
   } 
 
@@ -55,7 +55,7 @@ export default function UserList() {
         let formData = new FormData();
         formData.append("file",e.target.files[0],cnpj)
         formData.append("id",user[0].id);
-    let url =  `/api/caduser/file/${user[0].id}`
+    let url =  `https://nfeview.herokuapp.com/api/caduser/file/${user[0].id}`
         fetch(url, { 
             method: 'POST',
             body: formData
@@ -113,7 +113,7 @@ export default function UserList() {
   useEffect(() => {
 
 
-        let url =  '/api/userslist' 
+        let url =  'https://nfeview.herokuapp.com/api/userslist' 
 
         axios.get(url)
       .then((response) => {    

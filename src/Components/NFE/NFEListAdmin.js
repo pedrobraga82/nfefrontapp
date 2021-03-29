@@ -48,7 +48,7 @@ export default function NFEListAdmin() {
     useEffect(() => {
 
         if (users === "") {
-            let url =  '/api/userslist' 
+            let url =  'https://nfeview.herokuapp.com/api/userslist' 
 
             axios.get(url)
 
@@ -82,7 +82,7 @@ export default function NFEListAdmin() {
     e.preventDefault()
 
     
-     let url = `/nfelist/${cnpj}/${dataini}/${datafim}`;
+     let url = `https://nfeview.herokuapp.com/nfelist/${cnpj}/${dataini}/${datafim}`;
 
 
      axios.get(url, {
@@ -108,7 +108,7 @@ export default function NFEListAdmin() {
    const ExportExcel = () => {
 
 
-    let url = `/nfe/exportexcel/${cnpj}/${dataini}/${datafim}`;
+    let url = `https://nfeview.herokuapp.com/nfe/exportexcel/${cnpj}/${dataini}/${datafim}`;
         
       axios.get(url, {
         params: {

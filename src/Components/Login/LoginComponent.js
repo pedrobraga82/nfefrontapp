@@ -57,7 +57,7 @@
  
    doLogin() {  	
        
-     let url =  '/api/authentication?username=' + this.state.username +  '&password=' + base64.encode(utf8.encode(this.state.password))    
+     let url =  'https://nfeview.herokuapp.com/api/authentication?username=' + this.state.username +  '&password=' + base64.encode(utf8.encode(this.state.password))    
        
   
      axios.post(url)

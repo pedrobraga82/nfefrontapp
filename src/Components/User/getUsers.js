@@ -6,7 +6,7 @@ const GetUsers = () => {
 
     const [users,SetUsers] = useState(null) 
 
-    let url =  '/api/userslist' 
+    let url =  'https://nfeview.herokuapp.com/api/userslist' 
     
     
       axios.get(url)

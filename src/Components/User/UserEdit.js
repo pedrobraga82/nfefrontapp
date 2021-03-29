@@ -32,7 +32,7 @@ export default function UserEdit(user) {
     useEffect(() => {
         
         SetId(params.id)
-        let url = `/api/getuser/${params.id}`
+        let url = `https://nfeview.herokuapp.com/api/getuser/${params.id}`
         axios.get(url, {
             params: {
               ID: params.id
@@ -112,7 +112,7 @@ export default function UserEdit(user) {
             senhacertificado: senhacert
         }
 
-        let url =  `/api/updateuser/${id}` 
+        let url =  `https://nfeview.herokuapp.com/api/updateuser/${id}` 
           //+  this.state.username +  '&password=' 
           //+ base64.encode(utf8.encode(this.state.password))    
 
@@ -120,7 +120,7 @@ export default function UserEdit(user) {
           axios.put(url,user)
            .then((response) => {    
 
-                history.push("/listusers");
+                history.push("https://nfeview.herokuapp.com/listusers");
             })
             .catch((err) => {
 

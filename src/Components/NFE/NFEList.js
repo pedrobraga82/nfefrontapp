@@ -16,7 +16,7 @@ export default function NFEList() {
     useEffect(() => {
         
 
-        let url = `/nfelist/${cnpj}`;
+        let url = `https://nfeview.herokuapp.com/nfelist/${cnpj}`;
 
         axios.get(url)
         .then((response) => {

@@ -7,7 +7,7 @@ import UserList from '../UserList';
 
 export default function UserGet() {
 
-    let url =  '/api/userslist' 
+    let url =  'https://nfeview.herokuapp.com/api/userslist' 
 
     axios.get(url)
   .then((response) => {    
