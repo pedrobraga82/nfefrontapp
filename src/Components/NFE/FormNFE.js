@@ -27,7 +27,6 @@ useEffect(() => {
   let vetordados = {};
   let arraydados = [{}];
   let ns = [];
-  alert(cnpj)  
 
 
   if (texto != null && texto != "") {
@@ -249,7 +248,7 @@ const handleSubmit = (event) => {
                   </tbody> 
                 </Table>
                     <div>
-                      <textarea value={texto && texto}></textarea>
+                      {/* <textarea value={texto && texto}></textarea> */}
                     </div>
                     {/* <ExportExcel dataSet={texto && texto}/>    */}
                 </div>
