@@ -27,6 +27,7 @@ useEffect(() => {
   let vetordados = {};
   let arraydados = [{}];
   let ns = [];
+  alert(cnpj)  
 
 
   if (texto != null && texto != "") {
@@ -111,11 +112,8 @@ useEffect(() => {
  
 const handleSubmit = (event) => {
 
-
-
   event.preventDefault();
 
-  
 
            axios.get(`/nfe/${cnpj}`)
         .then(function (response) {
@@ -153,6 +151,7 @@ const handleSubmit = (event) => {
           
       .then((response) => {    
               //this.props.history.push("http://localhost:3000/listusers");
+              alert("Nota Salva com sucesso")
       
         })
           .catch((err) => {
