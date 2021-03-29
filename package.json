@@ -64,7 +64,6 @@
     "compress": true,
     "disableHostCheck": true
   },
-  "proxy": "https://nfeview.herokuapp.com",
   "devDependencies": {
     "react-app-rewired": "^2.1.8",
     "terser-brunch": "^4.0.0"
