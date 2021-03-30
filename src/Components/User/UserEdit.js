@@ -120,7 +120,7 @@ export default function UserEdit(user) {
           axios.put(url,user)
            .then((response) => {    
 
-                history.push("https://nfeview.herokuapp.com/listusers");
+                history.push("https://appnfeview.herokuapp.com/listusers");
             })
             .catch((err) => {
 
