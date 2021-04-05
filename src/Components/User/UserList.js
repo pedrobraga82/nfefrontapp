@@ -36,7 +36,7 @@ export default function UserList() {
         return e.cnpj === cnpj
       });
 
-      history.push(`https://appnfeview.herokuapp.com/edituser/${JSON.stringify(user[0].id)}`) 
+      history.push(`/edituser/${JSON.stringify(user[0].id)}`) 
 
   } 
 
