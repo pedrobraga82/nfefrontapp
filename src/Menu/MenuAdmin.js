@@ -135,7 +135,7 @@ export default function MenuAdmin() {
                     >
 
                     <Link to={{
-                                        pathname: "/nfelist"}}
+                                        pathname: "/nfelistadmin"}}
                                         >
                     
                         <Card className={classes.root} variant="outlined">
