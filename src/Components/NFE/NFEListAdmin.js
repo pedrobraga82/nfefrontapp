@@ -10,6 +10,7 @@ import { useParams } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import DownloadLink from "react-download-link";
 import {ExportCSV} from './ExportCSV';
+import Icon from '@material-ui/core/Icon';
 
 
 
@@ -234,14 +235,20 @@ export default function NFEListAdmin() {
                 <br></br>
                 <br></br>
                 <div>
-                        <Button variant="contained" color="default" size='small'  onClick={GetNfes}>Listar Nfe</Button>
+                         <Button
+                            variant="contained"
+                            color="primary"
+                            className={classes.button}
+                            endIcon={<Icon>send</Icon>}
+                            onClick={GetNfes}>Listar Nfe
+                            
+                        </Button>
                     </div>
             </div>  
             <div>
                 <NFETable dados={data && data} />
             </div>
             <div>
-            <Button variant="contained" color="default" size='small'  onClick={ExportExcel}>Exportar Nfes</Button>
            </div>
            <ExportCSV csvData={data && data} fileName={cnpj} />
 
